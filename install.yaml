@@ -6,3 +6,6 @@ project_files:
   - readme/.ahoy.readme.yml
   - web-build/Dockerfile.readme
   - config.readme.yaml
+dependencies:
+  #  - ddev get https://github.com/hanoii/ddev-ahoy/tarball/main
+  - ahoy
