@@ -1,0 +1,8 @@
+ahoyapi: v2
+commands:
+  readme:
+    usage: 'README.md commands'
+    imports:
+      # addon needs to be installed locally on ddev with 'ddev get .'
+      - ./.ddev/readme/.ahoy.readme.yml
+
