@@ -4,6 +4,7 @@
 <!-- toc -->
 
 - [What is ddev-readme?](#what-is-ddev-readme)
+- [TOC](#toc)
 
 <!-- tocstop -->
 
@@ -19,5 +20,16 @@ Once installed and `ddev restart`, it will start up a process watching for
 changes on your README.md. If you wish to disable this you can edit take charge
 of `config.readme.yaml` or add `DDEV_README_WATCH_DISABLED=true` as en
 environment variable for your project.
+
+## TOC
+
+For you toc generation to work automatically, you have to add the following
+somewhere on your README.md:
+
+```
+<!-- toc -->
+
+<!-- tocstop -->
+```
 
 **Contributed and maintained by [@hanoii](https://github.com/hanoii)**
