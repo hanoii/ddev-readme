@@ -3,6 +3,7 @@ project_files:
   - web-build/Dockerfile.readme
   - readme/watch.js
   - readme/.prettierrc
+  - readme/build.sh
   - readme/.ahoy.readme.yml
   - web-build/Dockerfile.readme
   - config.readme.yaml
