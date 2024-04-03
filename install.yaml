@@ -1,9 +1,20 @@
 name: readme
 project_files:
   - web-build/Dockerfile.readme
-  - readme/watch.js
+  - readme/watch.cjs
   - readme/.prettierrc
   - readme/build.sh
   - readme/.ahoy.readme.yml
   - web-build/Dockerfile.readme
   - config.readme.yaml
+post_install_actions:
+  - |
+    #ddev-description: [update] Rename watch.js to watch.cjs
+    file="readme/watch.js"
+    if [ -f "$file" ]; then
+      if grep '#ddev-generated' "$file" > /dev/null 2>&1; then
+        mv "$file" readme/watch.cjs
+      else
+        echo "Existing "$file" does not have #ddev-generated, so can't be renamed"
+      fi
+    fi
