@@ -1,6 +1,7 @@
 name: readme
 project_files:
   - web-build/Dockerfile.readme
+  - readme/.gitignore
   - readme/watch.cjs
   - readme/.prettierrc
   - readme/build.sh
