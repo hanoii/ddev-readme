@@ -1,13 +1,6 @@
 [![tests](https://github.com/hanoii/ddev-readme/actions/workflows/tests.yml/badge.svg)](https://github.com/hanoii/ddev-readme/actions/workflows/tests.yml)
 ![project is maintained](https://img.shields.io/maintenance/yes/2024.svg)
 
-<!-- toc -->
-
-- [What is ddev-readme?](#what-is-ddev-readme)
-- [TOC](#toc)
-
-<!-- tocstop -->
-
 ## What is ddev-readme?
 
 This is an opinionated approach to keeping README.md a bit standarized
@@ -27,9 +20,13 @@ For you toc generation to work automatically, you have to add the following
 somewhere on your README.md:
 
 ```
+
 <!-- toc -->
 
+
+
 <!-- tocstop -->
+
 ```
 
 **Contributed and maintained by [@hanoii](https://github.com/hanoii)**
