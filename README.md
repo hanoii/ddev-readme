@@ -28,7 +28,13 @@ For you toc generation to work automatically, you have to add the following
 somewhere on your README.md:
 
 ```<!-- toc   -->
-<!-- tocstop  -->
+
+```
+
+_toc will generated and put in between these tags_
+
+```<!-- tocstop  -->
+
 ```
 
 ## Install the dev version
