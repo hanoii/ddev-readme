@@ -27,13 +27,9 @@ changes on your README.md. If you wish to disable this you can edit and remove
 For you toc generation to work automatically, you have to add the following
 somewhere on your README.md:
 
-```<!-- toc   -->
-
 ```
-
-_toc will generated and put in between these tags_
-
-```<!-- tocstop  -->
+&lt;!-- toc  --&gt;
+&lt;!-- tocstop  --&gt;
 
 ```
 
