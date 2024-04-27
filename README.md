@@ -28,6 +28,7 @@ For you toc generation to work automatically, you have to add the following
 somewhere on your README.md:
 
 **&lt;!-- toc --&gt;**
+
 **&lt;!-- tocstop --&gt;**
 
 ## Install the dev version
