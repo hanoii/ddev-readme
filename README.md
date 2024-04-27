@@ -27,11 +27,8 @@ changes on your README.md. If you wish to disable this you can edit and remove
 For you toc generation to work automatically, you have to add the following
 somewhere on your README.md:
 
-```
-&lt;!-- toc  --&gt;
-&lt;!-- tocstop  --&gt;
-
-```
+**&lt;!-- toc --&gt;**
+**&lt;!-- tocstop --&gt;**
 
 ## Install the dev version
 
