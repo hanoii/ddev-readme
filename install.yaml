@@ -5,6 +5,7 @@ project_files:
   - readme/watch.cjs
   - readme/.prettierrc
   - readme/build.sh
+  - readme/whichnode.sh
   - readme/.ahoy.readme.yml
   - web-build/Dockerfile.readme
   - config.readme.yaml
