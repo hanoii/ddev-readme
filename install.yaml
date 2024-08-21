@@ -7,7 +7,7 @@ project_files:
   - readme/build.sh
   - readme/whichnode.sh
   - readme/.ahoy.readme.yml
-  - web-build/Dockerfile.readme
+  - web-entrypoint.d/readme-nodedeps.sh
   - config.readme.yaml
 post_install_actions:
   - |
@@ -18,5 +18,15 @@ post_install_actions:
         mv "$file" readme/watch.cjs
       else
         echo "Existing "$file" does not have #ddev-generated, so can't be renamed"
+      fi
+    fi
+  - |
+    #ddev-description: [update] Remove Dockerfile
+    file="web-build/Dockerfile.readme"
+    if [ -f "$file" ]; then
+      if grep '#ddev-generated' "$file" > /dev/null 2>&1; then
+        rm $file
+      else
+        echo "Existing "$file" does not have #ddev-generated, so can't be removed"
       fi
     fi
