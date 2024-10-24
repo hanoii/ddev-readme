@@ -33,9 +33,17 @@ somewhere on your README.md:
 
 ## Install the dev version
 
-You can always install the latest code with
+You can always install the latest code:
 
+For DDEV v1.23.5 or above run
+
+```sh
+ddev add-on get https://github.com/hanoii/ddev-readme/tarball/main
 ```
+
+For earlier versions of DDEV run
+
+```sh
 ddev get https://github.com/hanoii/ddev-readme/tarball/main
 ```
 
