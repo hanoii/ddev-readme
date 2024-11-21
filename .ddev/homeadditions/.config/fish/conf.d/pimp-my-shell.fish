@@ -9,6 +9,12 @@ function fish_user_key_bindings
   fzf --fish | source
 end
 
+# go
+fish_add_path /usr/local/go/bin
+fish_add_path ~/go/bin
+set -x GOOS
+set -x GOARCH
+
 # z.lua
 mkdir -p /mnt/ddev-global-cache/z.lua/$HOSTNAME
 set -x _ZL_DATA /mnt/ddev-global-cache/z.lua/$HOSTNAME/.zlua
@@ -39,4 +45,14 @@ end
 set -x IS_FISH_SHELL 1
 if status --is-interactive
   set -x IS_FISH_INTERACTIVE_SHELL 1
+end
+
+# eza aliases
+# https://gist.github.com/AppleBoiy/04a249b6f64fd0fe1744aff759a0563b
+function ls --wraps eza --description "alias ls='eza --color=always --group-directories-first --icons'"
+    eza --color=always --group-directories-first --icons $argv
+end
+
+function ll --wraps eza --description "eza -la --icons --octal-permissions --group-directories-first"
+    eza -la --icons --octal-permissions --group-directories-first $argv
 end
